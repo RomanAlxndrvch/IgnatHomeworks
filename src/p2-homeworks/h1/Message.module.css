@@ -55,4 +55,8 @@
 .time {
     color: gray;
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    transform: translateY(5px);
 }
