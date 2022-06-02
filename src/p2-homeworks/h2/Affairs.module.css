@@ -44,6 +44,28 @@
     text-decoration: none;
     border: solid 1px gray;
     background-color: antiquewhite;
+}
 
+.red {
+    width: 25%;
+    padding: 4px;
 
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(255, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
+}
+
+.yellow {
+    width: 25%;
+    padding: 4px;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(255, 248, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
+}
+
+.green {
+    width: 25%;
+    padding: 4px;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(0, 255, 8, 1) 50%, rgba(0, 212, 255, 0) 100%);
 }
