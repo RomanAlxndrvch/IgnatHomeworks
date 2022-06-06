@@ -3,6 +3,7 @@ import Affairs from './Affairs'
 import classes from './Affairs.module.css'
 
 // types
+
 export type AffairPriorityType = 'high' | 'middle' | 'low'
 export type AffairType = { _id: number, name: string, priority: string }
 export type FilterType = 'all' | AffairPriorityType
