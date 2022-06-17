@@ -11,7 +11,8 @@ function HW4() {
     const showAlert = () => {
         if (error) {
             alert('введите текст...')
-        } else {
+        }
+        else {
             alert(text) // если нет ошибки показать текст
         }
     }
@@ -30,6 +31,8 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
+                    /* onChange={(e) => setText(e.currentTarget.value)}*/
+
                     // spanClassName={s.testSpanError}
                 />
 

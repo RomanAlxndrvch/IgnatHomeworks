@@ -10,8 +10,12 @@ type GreetingContainerPropsType = {
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
     const [name, setName] = useState<string>('')
     const [error, setError] = useState<string>('')
+    const [errorMessage, setErrorMessage] = useState<string>('')
+
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
+        !e.currentTarget.value && setErrorMessage('Type Something!')
+        e.currentTarget.value && setErrorMessage('')
         !e.currentTarget.value.includes(' ') && setName(e.currentTarget.value)
         name.length > 0 && setError('')
     }
@@ -43,6 +47,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             error={error}
             totalUsers={totalUsers}
             onKeyDownHandler={pressEnterHandler}
+            errorMessage={errorMessage}
         />
     )
 }
