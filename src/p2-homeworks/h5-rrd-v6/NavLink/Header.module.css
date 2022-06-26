@@ -1,0 +1,22 @@
+.nav_container {
+    height: 30px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+}
+
+.nav_link {
+    transition: all 1s;
+    position: absolute;
+    left: -120px;
+}
+
+.navLinkHover {
+    position: absolute;
+    transition: all 1s;
+    color: red;
+    left: +1px;
+}
