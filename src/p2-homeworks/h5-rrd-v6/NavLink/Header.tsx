@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
 import classes from './Header.module.css'
+import './Header.module.css'
+import {NavLink} from "react-router-dom";
+import {PATH} from "../Pages";
 
 
 function Header() {
@@ -16,16 +19,23 @@ function Header() {
         return isHovering ? classes.navLinkHover : classes.nav_link
     }
 
+    const navLinkStyles = ({isActive}: { isActive: boolean; }) => {
+        return {
+            background: isActive ? '#9AC2C5' : '',
+            borderRadius: '5px',
+            transition: 'all 0.5s'
+        }
+    }
+
 
     return (
         <div className={classes.nav_container}>
             <div className={isHover()} onMouseOver={mouseOn}
                  onMouseLeave={mouseOff}>
-                <span> Link1  </span>
-                <span> Link2 </span>
-                <span> Link3 </span>
-                <span> Hover me! </span>
-
+                <NavLink style={navLinkStyles} className={classes.link} to={PATH.PRE_JUNIOR}> Pre Junior </NavLink>
+                <NavLink style={navLinkStyles} className={classes.link} to={PATH.JUNIOR}> Pre Junior </NavLink>
+                <NavLink style={navLinkStyles} className={classes.link} to={PATH.JUNIOR_PLUS}> Junior Plus </NavLink>
+                <span className={classes.ch}> Hover me! </span>
             </div>
         </div>
     )

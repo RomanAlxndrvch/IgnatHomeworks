@@ -11,12 +11,33 @@
 .nav_link {
     transition: all 1s;
     position: absolute;
-    left: -120px;
+    left: -260px;
+
 }
 
 .navLinkHover {
     position: absolute;
     transition: all 1s;
-    color: red;
     left: +1px;
+    margin-left: 10px;
+}
+
+.link {
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+a.active {
+    text-decoration: none;
+    background-color: #A31925;
+}
+
+span {
+    padding: 20px;
+}
+
+.navLinkHover:hover > .ch {
+    opacity: 0;
+    transition: all 1.5s;
 }
