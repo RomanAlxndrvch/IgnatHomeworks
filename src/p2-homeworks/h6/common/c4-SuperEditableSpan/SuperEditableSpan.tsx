@@ -62,10 +62,12 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                     />
                 ) : (
                     <span
+                        title={'Enter your text'}
                         onDoubleClick={onDoubleClickCallBack}
                         className={spanClassName}
                         {...restSpanProps}>
-                        &#9998; {children || restProps.value}
+                        <span className={classes.spanPen}>&#9998;</span>
+                        <span className={classes.spanText}>{children || restProps.value}</span>
                     </span>
                 )
             }

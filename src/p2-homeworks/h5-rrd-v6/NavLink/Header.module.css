@@ -34,7 +34,7 @@ a.active {
 }
 
 span {
-    padding: 20px;
+    /*  padding: 20px;*/
 }
 
 .navLinkHover:hover > .ch {

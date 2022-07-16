@@ -1,8 +1,23 @@
 .mainTextBlock {
-    padding: 20px;
+    margin: 20px;
 }
 
 .editableSpan {
     background-color: bisque;
+    padding: 5px 15px 5px 15px;
+    height: 30px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+.spanPen {
+
+}
+
+.spanText {
+    margin-right: 5px;
+}

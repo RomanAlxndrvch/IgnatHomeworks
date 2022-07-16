@@ -44,6 +44,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     return (
         <>
             <input
+                maxLength={15} // max symbols in input
                 type={'text'}
                 onChange={onChangeCallback}
                 onKeyPress={onKeyPressCallback}

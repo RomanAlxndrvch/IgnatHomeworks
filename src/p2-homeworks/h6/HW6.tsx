@@ -8,10 +8,18 @@ function HW6() {
     const [value, setValue] = useState<string>('')
 
     const save = () => {
+        console.log(value)
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        setValue(restoreState<string>('editable-span-value', value))
+    }
+
+    const clear = () => {
+        localStorage.clear()
+    }
+    const remove = () => {
+        localStorage.removeItem('editable-span-value')
     }
 
     return (
@@ -29,6 +37,8 @@ function HW6() {
             </div>
             <SuperButton onClick={save}>save</SuperButton>
             <SuperButton onClick={restore}>restore</SuperButton>
+            <SuperButton onClick={clear}>clear</SuperButton>
+            <SuperButton onClick={remove}>remove</SuperButton>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
