@@ -33,7 +33,7 @@ function Header() {
             <div className={isHover()} onMouseOver={mouseOn}
                  onMouseLeave={mouseOff}>
                 <NavLink style={navLinkStyles} className={classes.link} to={PATH.PRE_JUNIOR}> Pre Junior </NavLink>
-                <NavLink style={navLinkStyles} className={classes.link} to={PATH.JUNIOR}> Pre Junior </NavLink>
+                <NavLink style={navLinkStyles} className={classes.link} to={PATH.JUNIOR}>Junior </NavLink>
                 <NavLink style={navLinkStyles} className={classes.link} to={PATH.JUNIOR_PLUS}> Junior Plus </NavLink>
                 <span className={classes.ch}> Hover me! </span>
             </div>

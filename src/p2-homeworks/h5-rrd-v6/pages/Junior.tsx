@@ -8,7 +8,7 @@ import HW12 from "../../h12/HW12";
 
 export function Junior() {
     return (
-        <div>
+        <div style={{padding: '10px'}}>
             <HW7/>
             <HW8/>
             <HW9/>
