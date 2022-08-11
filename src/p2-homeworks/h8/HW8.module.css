@@ -1,0 +1,32 @@
+.list {
+    width: 15vw;
+    background-color: #9C94F1;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: green;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    font-size: 16px;
+
+}
+
+.btn:active {
+    background-color: #0B325E;
+}
+
+.btn_container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
