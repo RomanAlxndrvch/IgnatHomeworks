@@ -1,4 +1,5 @@
 import React from 'react'
+import {Box, Slider} from "@mui/material";
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
@@ -15,9 +16,10 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     // сделать самому, можно подключать библиотеки
 
     return (
-        <>
+        <Box sx={{width: 300}}>
             DoubleRange
-        </>
+            <Slider/>
+        </Box>
     )
 }
 
